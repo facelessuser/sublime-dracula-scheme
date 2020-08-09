@@ -11,14 +11,14 @@
         "yellow": "hsl(65, 92%, 76%)",     // #f1fa8c
         "green": "hsl(135, 94%, 65%)",     // #50fa7b
         "cyan": "hsl(191, 97%, 77%)",      // #8be9fd
-        "blue": "hsl(225, 27%, 51%)",      // #6272a4
+        "blue": "hsl(225, 100%, 75%)",     // #809fff
         "pink": "hsl(326, 100%, 74%)",     // #ff79c6
         "purple": "hsl(265, 89%, 78%)",    // #bd93f9
 
         // Variant specific colors (change these for variants)
-        "background": "hsl(231, 15%, 18%)", // #282a36
-        "selection": "hsl(232, 14%, 31%)",  // #44475a
-        "comment": "var(blue)",             // #6272a4
+        "background": "hsl(231, 15%, 18%)",           // #282a36
+        "selection": "hsl(232, 14%, 31%)",            // #44475a
+        "comment": "color(var(blue) s(27%) l(51%))",  // #6272a4
         "line-highlight": "var(selection)",
         "alt-background": "color(var(background) l(+ 4%))",
         "accent": "var(blue)",
