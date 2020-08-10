@@ -75,8 +75,7 @@ Want a pinkish theme? Plug in a pink hued background and tweak a couple variable
     Dracula doesn't really define a "blue" per se, but here "blue" represents the classic palette's blue-ish comments.
 
 1.  The next section provides a number of colors that it is expected users would alter for color scheme variants. This
-    defines colors such as comments, backgrounds, alternate backgrounds (Markdown code blocks etc.), line highlights,
-    selections, etc.
+    defines colors such as comments, backgrounds, line highlights, selections, etc.
 
     ```js
     // Variant specific colors (change these for variants)
@@ -84,16 +83,15 @@ Want a pinkish theme? Plug in a pink hued background and tweak a couple variable
     "selection": "hsl(232, 14%, 31%)",  // #44475a
     "comment": "var(blue)",             // #6272a4
     "line-highlight": "var(selection)",
-    "alt-background": "color(var(background) l(+ 4%))",
     "accent": "var(blue)",
     ```
 
-    If attempting a Pro style variant, you might change the `background`. You might derive `comment` from one of the
-    core colors and adjust saturation and lightness. You might derive a new `selection` from your new `background`. You
-    may also want a different accent.
+    If attempting a Pro style variant, you may want to change the `background`. You may want to derive `comment` from
+    one of the core colors (adjusting saturation and lightness). You may want to derive a new `selection` from your new
+    `background` color. You may also want a different accent color.
 
-1. The last group of are areas that are less likely to require modification, though you may want to make the caret
-   jump out more by setting it to `pink`, or maybe you wish to alter the `highlight` of find results.
+1. The last group of variables touch items that are less likely to require modification, though you may want to make the
+   caret stand out more by setting it to `pink`, or maybe you wish to alter the `highlight` of find results.
 
    ```js
     // UI elements derived from color schemes
@@ -114,8 +112,6 @@ variant called Van Helsing. We will not give the actual Van Helsing palette, but
 -   We will derive a comment that also matches the background, but stands out.
 -   We will derive a line highlight from the background as well, though you could just use `selection` as a suitable
     line highlight as well.
--   Our `alt-background` will be require us to lighten it more than we do in the "classic" colorscheme as we need more
-    contrast on such a dark background.
 -   Lastly, we will continue to use the accent, but you are free to change this to anything.
 
 ```js
@@ -124,7 +120,6 @@ variant called Van Helsing. We will not give the actual Van Helsing palette, but
 "selection": "color(var(background) s(15%) l(30%))",
 "comment": "color(var(blue) s(25%) l(55%))",
 "line-highlight": "color(var(background) s(25%) l(25%))",
-"alt-background": "color(var(background) l(+ 6%))",
 "accent": "var(blue)",
 ```
 
@@ -140,7 +135,6 @@ We could just as easily change the colors and produce a Buffy like variant as we
 "selection": "color(var(background) s(15%) l(30%))",
 "comment": "color(var(pink) s(25%) l(55%))",
 "line-highlight": "color(var(background) s(25%) l(25%))",
-"alt-background": "color(var(background) l(+ 4%))",
 "accent": "var(pink)",
 ```
 

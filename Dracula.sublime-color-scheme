@@ -1,7 +1,7 @@
 {
     "name": "Dracula",
     "author": "Isaac Muse",
-    "comments": "Derivation of: Dracula (Zeno Rocha) and Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski)",
+    "comments": "Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using Dracula color palette (Zeno Rocha)",
     "variables":
     {
         // Static palette colors. These are constant through all variations.
@@ -20,7 +20,6 @@
         "selection": "hsl(232, 14%, 31%)",            // #44475a
         "comment": "color(var(blue) s(27%) l(51%))",  // #6272a4
         "line-highlight": "var(selection)",
-        "alt-background": "color(var(background) l(+ 4%))",
         "accent": "var(blue)",
 
         // UI elements derived from color schemes
@@ -244,17 +243,17 @@
         {
             "name": "markup headings",
             "scope": "markup.heading punctuation.definition.heading",
-            "foreground": "var(orange)"
+            "foreground": "var(purple)"
         },
         {
             "name": "markup h1",
             "scope": "markup.heading.1 punctuation.definition.heading",
-            "foreground": "var(orange)"
+            "foreground": "var(purple)"
         },
         {
             "name": "markup links",
             "scope": "string.other.link, markup.underline.link",
-            "foreground": "var(green)"
+            "foreground": "var(cyan)"
         },
         {
             "name": "markup bold",
@@ -294,32 +293,42 @@
         {
             "name": "markup hr",
             "scope": "punctuation.definition.thematic-break",
-            "foreground": "var(yellow)"
+            "foreground": "var(orange)"
         },
         {
             "name": "markup numbered list bullet",
             "scope": "markup.list.numbered.bullet",
-            "foreground": "var(green)"
+            "foreground": "var(orange)"
         },
         {
             "name": "markup blockquote",
             "scope": "markup.quote punctuation.definition.blockquote, markup.list punctuation.definition.list_item",
-            "foreground": "var(yellow)"
+            "foreground": "var(orange)"
         },
         {
             "name": "markup code",
             "scope": "markup.raw",
-            "background": "var(alt-background)"
+            "foreground": "var(green)"
         },
         {
             "name": "markup code",
             "scope": "markup.raw.inline",
-            "background": "var(alt-background)"
+            "foreground": "var(green)"
         },
         {
             "name": "markup punctuation",
             "scope": "(text punctuation.definition.italic | text punctuation.definition.bold)",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "markdown reference",
+            "scope": "entity.name.reference.link.markdown",
             "foreground": "var(pink)"
+        },
+        {
+            "name": "markdown link string",
+            "scope": "string.other.link.description.title.markdown",
+            "foreground": "var(yellow)"
         },
         {
             "name": "diff.header",
@@ -348,7 +357,7 @@
         },
         {
             "scope": "constant.numeric.line-number.match",
-            "foreground": "var(red)"
+            "foreground": "var(pink)"
         },
         {
             "scope": "message.error",
