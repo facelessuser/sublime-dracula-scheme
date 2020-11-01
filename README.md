@@ -139,3 +139,27 @@ We could just as easily change the colors and produce a Buffy like variant as we
 ```
 
 ![Pink](screenshots/Text%20-%20Pink.png)
+
+Or also deduct our own Proish variant using color theory (indluded in this fork):
+
+![Proish](screenshots/proish.png)
+
+```js
+// Static palette colors. These are constant through all variations.
+"foreground": "hsl(60, 25%, 95%)",
+"red": "hsl(12, 100%, 75%)",
+"orange": "hsl(35, 100%, 75%)",
+"yellow": "hsl(60, 100%, 75%)",
+"green": "hsl(115, 100%, 75%)",
+"cyan": "hsl(170, 100%, 75%)",
+"blue": "hsl(225, 100%, 75%)",
+"pink": "hsl(330, 100%, 75%)",
+"purple": "hsl(250, 100%, 75%)",
+
+// Variant specific colors (change these for variants)
+"background": "hsl(245, 15%, 15%)",
+"selection": "hsl(230, 15%, 30%)",
+"comment": "color(var(blue) s(25%) l(50%))",
+"line-highlight": "var(selection)",
+"accent": "var(blue)",
+```
