@@ -22,6 +22,21 @@ For Sublime Text, edit your `Preferences.sublime-settings` file to use the Dracu
 For Sublime Merge, once installed, it is recommended to install the [Sublime Merge theme](https://github.com/facelessuser/merge-dracula-theme)
 and follow related theme instructions.
 
+## Alternative Scheme: Alucard
+
+An alternative color scheme is also provided called `Dracula (Alucard)`. It is just like Dracula, but we take some
+liberties and "fix" issues that we find problematic in the original, classic `Dracula`. One such issue is line
+highlight. Our personal belief is that the chosen line highlight color does not work well with the comment color, so we
+have chosen a color that is more subtle, looks better with the background, and makes text easier to read.
+
+![Alucard](screenshots/Text%20-%20Alucard.png)
+
+To use `Dracula (Alucard)`, simply set color scheme to:
+
+```js
+    "color_scheme": "Packages/Color Scheme - Dracula/Dracula (Alucard).sublime-color-scheme",
+```
+
 ## Dracula Pro?
 
 Dracula Pro changed up the color palette a bit and added new variants such as Buffy, Van Helsing, and others. Dracula
