@@ -1,5 +1,5 @@
 {
-    "name": "Dracula",
+    "name": "Dracula (Alucard)",
     "author": "Isaac Muse",
     "comments": "Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using Dracula color palette (Zeno Rocha)",
     "variables":
@@ -16,10 +16,10 @@
         "purple": "hsl(265, 89%, 78%)",    // #bd93f9
 
         // Variant specific colors (change these for variants)
-        "background": "hsl(231, 15%, 18%)",        // #282a36
-        "selection": "hsl(232, 14%, 31%)",         // #44475a
-        "comment": "color(var(blue) s(27%) l(51%))",  // #6272a4
-        "line-highlight": "var(selection)",
+        "background": "hsl(231, 15%, 18%)",               // #282a36
+        "selection": "color(var(background) s(15%) l(30%))", // #414458
+        "comment": "color(var(blue) s(27%) l(51%))",         // #6272a4
+        "line-highlight": "color(var(background) s(25%) l(25%))",
         "accent": "var(blue)",
 
         // UI elements derived from color schemes
