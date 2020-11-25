@@ -42,26 +42,26 @@ To use `Dracula (Alucard)`, simply set color scheme to:
 Dracula Pro changed up the color palette a bit and added new variants such as Buffy, Van Helsing, and others. Dracula
 Pro is also not free. Because of this, we only provide the "classic" Dracula palette.
 
-We'd love to provide Pro variants, but while we think we have figured out the color palette for new Pro variants,
-without the Pro color scheme being made public, we do not feel it would be proper to release our variants here.
+We'd love to provide Pro variants, and we already have variants ready in a private repository, but while we think we
+have figured out the color palette for the new Pro variants, we have chosen not to release it at this time. While a
+reasonable argument could be made that the colors themselves cannot be copyrighted and we have not seen the official
+Dracula Pro source and have not copied any actual theme sources, we do not feel it would be proper to release our
+variants at this time.
 
 For those who've acquired Pro through purchasing, the current color scheme can be customized with overrides to provide
 Pro styles.
 
-If at some future time, the Pro public scheme becomes available to the public, we will be happy to provide theme
-variants here as well.
+If at some future time the Pro color palette becomes available to the public, we will be happy to provide theme
+variants here as well. It is not a matter of the paid themes themselves becoming public, but mainly the palette. If
+it appears to generally be safe to create custom interpretations using the color palette, then we will be happy to
+distribute our own take here.
 
-## Customize
+## Customize Color Scheme
 
-The Dracula Pro Merge theme dynamically sources it's colors from the color scheme. While you are free to provide
-overrides to the theme, it would normally be recommended to apply overrides to the color scheme if all you want is to
-tweak the palette. Overriding the color scheme is all we will be covering at this time.
-
-Customizing the color scheme can be useful if you'd like to things like tweak the background to be darker, or tweak
-accents or even to update the palette for something like Dracula Pro variants, or even your own custom palette.
+Customizing the color scheme can be useful if you'd like to tweak the background to be darker, tweak the accents, or
+even update the palette for something like Dracula Pro variants or even your own custom take.
 
 The color scheme provides a number of variables for the purpose of overrides.
-
 
 This color scheme is designed in such a way as to be customizable. Simply override the background with the color of your
 choice, and create comments and selections that adapt based on your background selection (or other color if you choose).
@@ -119,8 +119,8 @@ Want a pinkish theme? Plug in a pink hued background and tweak a couple variable
     ```
 
 For an example, let's say we wanted to create our own unofficial Van Helsing variant. Dracula Pro provides a darker
-variant called Van Helsing. We will not give the actual Van Helsing palette, but simply show how to make one with the
-"classic" palette.
+variant called Van Helsing. We will not give the actual Van Helsing palette, but simply show how to make one that is
+similar with the "classic" palette.
 
 -   We will take the existing `blue` that we use for comments and darken it and adjust the saturation considerably.
 -   We will derive a selection from that is similar to the background but lighter.
@@ -154,3 +154,11 @@ We could just as easily change the colors and produce a Buffy like variant as we
 ```
 
 ![Pink](screenshots/Text%20-%20Pink.png)
+
+## Customize Merge
+
+The [Dracula Merge theme](https://github.com/facelessuser/merge-dracula-theme) theme dynamically sources its colors
+from the color scheme. While you are free to provide overrides to the theme, it would normally be recommended to apply
+overrides to the color scheme if all you want is to tweak the color palette. Overriding the color scheme is all we will
+be covering at this time. You are free to override the Merge theme if you desire, but you will have to explore the inner
+workings on you own.
