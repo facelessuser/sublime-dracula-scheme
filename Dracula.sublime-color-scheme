@@ -92,6 +92,12 @@
             "foreground": "var(purple)"
         },
         {
+            "name": "Number Suffix",
+            "scope": "storage.type.numeric",
+            "foreground": "var(pink)",
+            "font_style": "italic"
+        },
+        {
             "name": "Built-in constant",
             "scope": "constant.language",
             "foreground": "var(purple)",
