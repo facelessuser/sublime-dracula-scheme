@@ -68,7 +68,8 @@ choice. You can create an override file using the name `Dracula.sublime-color-sc
 
 ## How to Create Pro Variants?
 
-Assuming you have access to the official Pro variant colors, Merge requires the following color schemes to be found:
+Assuming you have access to the official Pro variant colors, you can modify the provided color scheme with the official
+Dracula Pro color palette. If you wish to create Pro color schemes that work with the [Sublime Merge theme](https://github.com/facelessuser/merge-dracula-theme), you should use the names found below when creating your Pro color schemes:
 
 - Pro: `Dracula Pro.sublime-color-scheme`
 - Buffy: `Dracula Pro (Buffy).sublime-color-scheme`
@@ -104,7 +105,7 @@ Lastly, edit the "Variant Specific" section as shown below. The `background` and
 the official Dracula Pro color schemes. It can be noted that we use the general `color(var(background) s(25%) l(55%))`
 value for `comment`, and while it may not be the "exact" comment color of what the official Dracula Pro color scheme may
 use, we've found it to be more than close enough. `accent` can really be anything, but we will mention our personal
-recommendations below as well. 
+recommendations below as well.
 
 ```js
         // Variant specific colors (change these for variants)
