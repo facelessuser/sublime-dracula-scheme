@@ -43,33 +43,27 @@ Dracula Pro changed up the color palette a bit and added new variants such as Bu
 Pro is also not free. Because of this, we only provide the "classic" Dracula palette.
 
 We'd love to provide Pro variants, and we already have variants ready in a private repository, but while we think we
-have figured out the color palette for the new Pro variants, we have chosen not to release it at this time. While a
-reasonable argument could be made that the colors themselves cannot be copyrighted and we have not seen the official
-Dracula Pro source and have not copied any actual theme sources, we do not feel it would be proper to release our
-variants at this time.
+have figured out the color palette for the new Pro variants, we have chosen not to release it at this time as we do not
+want our repository taken down. While a reasonable argument could be made that the colors themselves cannot be
+copyrighted and we have not seen the official Dracula Pro source and have not copied any actual theme sources, we do not
+feel it would be proper to release our variants at this time.
 
-For those who've acquired Pro through purchasing, the current color scheme can be customized with overrides to provide
-Pro styles.
+For those who've acquired Pro through purchasing, the current color scheme can be used as a base to easily and quickly
+create Pro variants. We've created a section to help guide interested parties who have purchased Dracula Pro or others,
+like us, who have deduced what the actual colors are. Check out [How to Create Pro Variants](#how-to-create-pro-variants)
+for more info.
 
 If at some future time the Pro color palette becomes available to the public, we will be happy to provide theme
 variants here as well. It is not a matter of the paid themes themselves becoming public, but mainly the palette. If
 it appears to generally be safe to create custom interpretations using the color palette, then we will be happy to
 distribute our own take here.
 
-## Customize Color Scheme
-
-Customizing the color scheme can be useful if you'd like to tweak the background to be darker, tweak the accents, or
-even update the palette for something like Dracula Pro variants or even your own custom take.
-
-The color scheme provides a number of variables for the purpose of overrides.
-
-This color scheme is designed in such a way as to be customizable. Simply override the variables with the color of your
-choice. You can create an override file using the name `Dracula.sublime-color-scheme` in your `User` folder.
-
 ## How to Create Pro Variants?
 
-Assuming you have access to the official Pro variant colors, you can modify the provided color scheme with the official
-Dracula Pro color palette. If you wish to create Pro color schemes that work with the [Sublime Merge theme](https://github.com/facelessuser/merge-dracula-theme), you should use the names found below when creating your Pro color schemes:
+Assuming you have access to the official Pro variant colors, or feel you have deduced what these colors are, you can
+modify the provided color scheme with the official Dracula Pro color palette. If you wish to create Pro color schemes
+that work with the [Sublime Merge theme](https://github.com/facelessuser/merge-dracula-theme), you should use the names
+found below when creating your Pro color schemes:
 
 - Pro: `Dracula Pro.sublime-color-scheme`
 - Buffy: `Dracula Pro (Buffy).sublime-color-scheme`
@@ -156,6 +150,39 @@ schemes and use a recommended `accent` of `var(blue)`.
         "line-highlight": "color(var(background) s(25%) l(25%))",
         "accent": "var(blue)",
 ```
+
+Using the steps above, and a little sleuthing in regards to the main colors, we were able to create Pro variants that
+match very close. While we have not purchased the official Dracula color scheme, and do not know the exact colors, we
+are fairly certain that the below images are a very close approximation and, if steps were followed with the official
+colors, would yield a very similar result.
+
+Dracula Pro:
+
+![Pro](screenshots/Text%20-%20Pro.png)
+
+Dracula Pro (Alucard)
+
+![Alucard](screenshots/Text%20-%20Alucard%20Pro.png)
+
+Dracula Pro (Buffy)
+
+![Buffy](screenshots/Text%20-%20Buffy.png)
+
+Dracula Pro (Blade)
+
+![Blade](screenshots/Text%20-%20Blade.png)
+
+Dracula Pro (Lincoln)
+
+![Lincoln](screenshots/Text%20-%20Lincoln.png)
+
+Dracula Pro (Morbius)
+
+![Morbius](screenshots/Text%20-%20Morbius.png)
+
+Dracula Pro (Van Helsing)
+
+![Van Helsing](screenshots/Text%20-%20Van%20Helsing.png)
 
 ## Customize Merge
 
