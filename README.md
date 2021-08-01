@@ -112,7 +112,7 @@ recommendations below as well.
         "selection": "color(var(background) s(15%) l(30%))",
         "comment": "color(var(background) s(25%) l(55%))", // <-- Use this or the official color from Dracula Pro
         "line-highlight": "color(var(background) s(25%) l(25%))",
-        "accent": "",  // <-- Pick a color you like or one of our recommendation below
+        "accent": "",  // <-- Pick a color you like or our recommendation below
 ```
 
 It can be noted that we use the general `color(var(background) s(25%) l(55%))` value for `comment`. In most cases, this
@@ -133,7 +133,7 @@ Since Alucard uses classic colors for `background` and `comment`, we can post ex
         "accent": "var(blue)",
 ```
 
-Recommend accent values:
+Recommended accent values:
 
 - Pro: `var(purple)`
 - Buffy: `var(pink)`
