@@ -116,7 +116,7 @@ color schemes seem to be very close to this with a few color schemes deviating s
 that most people would notice unless comparing the colors very, very closely.
 
 Next, we generically set `selection` and `line-highlight` to the following. Again, these might not be exactly what is
-used in the official Pro color schemes, but these look really good and are more than sufficient. If you have the\
+used in the official Pro color schemes, but these look really good and are more than sufficient. If you have the
 official color schemes and determine those to be superior, feel free to use those instead.
 
 ```js
