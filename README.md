@@ -112,9 +112,9 @@ is honestly a very close, generic solution (assuming you have a background that 
 color schemes seem to be very close to this with a few color schemes deviating slightly, but not in a significant way
 that most people would notice unless comparing the colors very, very closely.
 
-Next, we generically set `selection` and `line-highlight` to the following. Again, these might not be exactly what is
-used in the official Pro color schemes, but these look really good and are more than sufficient. If you have the
-official color schemes and determine those to be superior, feel free to use those instead.
+Next, we generically set `selection` and `line-highlight` as seen below. Again, these might not be exactly what is used
+in the official Pro color schemes, but these look really good and are more than sufficient. If you have the official
+color schemes and determine those to be superior, feel free to use those instead.
 
 ```js
         // Variant specific colors (change these for variants)
@@ -122,7 +122,7 @@ official color schemes and determine those to be superior, feel free to use thos
         "line-highlight": "color(var(background) s(25%) l(25%))",
 ```
 
-This gives a generally good line looking line highlight and selection. You could just as easily use the `line-highlight`
+This gives a generally good looking line highlight and selection. You could just as easily use the `line-highlight`
 setting for `selection` as well if you wanted the same, more subtle highlight for selections.
 
 Lastly, we pick a color from the main palette for the `accent`. While we recommend using a palette color that matches
