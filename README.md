@@ -79,7 +79,8 @@ Dracula Pro color palette. If you wish to create Pro color schemes that work wit
 - Van Helsing: `Dracula Pro (Van Helsing).sublime-color-scheme`
 
 Using the `Dracula (Alucard).sublime-color-scheme` as a base (found [here](https://github.com/facelessuser/sublime-dracula-scheme/blob/master/Dracula%20(Alucard)),
-simply change the palette colors below to the appropriate, offical colors.
+simply change the palette colors below to the appropriate, official colors. These colors will be the same for all Pro
+color schemes.
 
 ```js
         // Static palette colors. These are constant through all variations.
@@ -102,7 +103,8 @@ will not be used in normal syntax highlighting it is recommend as a good `accent
 is used as an additional branch color in Merge etc.
 
 Lastly, edit the "Variant Specific" section as shown below. The `background` and `comment` can be pulled directly from
-the official Dracula Pro color schemes. `accent` can really be anything, but we will mention our personal recommendations below as well.
+the official Dracula Pro color schemes. `accent` can really be anything, but we will mention our personal
+recommendations below as well.
 
 ```js
         // Variant specific colors (change these for variants)
