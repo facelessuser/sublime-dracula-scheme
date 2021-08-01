@@ -102,10 +102,7 @@ will not be used in normal syntax highlighting it is recommend as a good `accent
 is used as an additional branch color in Merge etc.
 
 Lastly, edit the "Variant Specific" section as shown below. The `background` and `comment` can be pulled directly from
-the official Dracula Pro color schemes. It can be noted that we use the general `color(var(background) s(25%) l(55%))`
-value for `comment`, and while it may not be the "exact" comment color of what the official Dracula Pro color scheme may
-use, we've found it to be more than close enough. `accent` can really be anything, but we will mention our personal
-recommendations below as well.
+the official Dracula Pro color schemes. `accent` can really be anything, but we will mention our personal recommendations below as well.
 
 ```js
         // Variant specific colors (change these for variants)
@@ -116,7 +113,14 @@ recommendations below as well.
         "accent": "",  // <-- Pick a color you like or one of our recommendation below
 ```
 
-Since Alucard uses classic colors for `background` and `comment`, we can post exactly what we use:
+It can be noted that we use the general `color(var(background) s(25%) l(55%))` value for `comment`. In most cases, this
+seems to be pretty close to the actual color in most official Pro variants, but in some cases it may be slightly more
+off, but not to any extremely noticeable degree. I'm not sure much is gained by trying to target the exact comment color
+used in the official schemes, so we've chosen to use a more generic formula for comment, but purists can use the
+official color if desired.
+
+Since Alucard uses classic colors for `background` and `comment`, we can post exactly what we use (see our comment about
+`blue` in Pro color schemes above):
 
 ```js
         // Variant specific colors (change these for variants)
