@@ -94,15 +94,18 @@ Pro color schemes except for `background` and `comment` which are variant specif
 ```
 
 It should be noted that `blue` is not a defined color in the official Dracula color palette or Pro color palette. But
-many plugins in Sublime may reference `bluish` and just get back the `purple` color when using popups or creating
-regions. In the classic Dracula color scheme, we simply take the `comment` color, which has a bluish hue and normalize
-the saturation and lightness to get a more vibrant blue which matches the feel of the Dracula palette:
-`hsl(225 27% 51%)` -> `hsl(255 100% 75%)`. For Pro, the Van Helsing background, while extremely dark, actually uses a
-blue hued color, and we take that color and normalize its saturation and lightness to create a suitable "Pro" `blue`.
-Simply take the hue of the Van Helsing background and apply the same saturation and lightness that all the other main
-colors use. While `blue` is not used in the actual syntax highlighting of code, it is used as a recommend accent color
-for a couple of the color schemes, is used as an additional color in the commit graph in Merge and other places, and
-may be referenced by certain plugins or themes.
+`blue` is used as an additional color for themes when more color variants are needed. Also, Sublime provides `bluish`
+and `cyanish` variables, and when plugins or popups specify these variables, expecting unique colors, unless an
+appropriate color is provided, Sublime will just reuse an existing color. We specify `blue` to ensure that popups and
+plugins that use both `cyanish`, `bluish` and/or `purplish` will yield a unique color. While `blue` is not used in the
+actual syntax highlighting of code, it is used as a recommend accent color for a couple of the color schemes and is used
+as an additional color in the commit graph and blame view in our Merge theme.
+
+In the classic Dracula color scheme, we simply take the `comment` color which has a bluish hue and normalize the
+saturation and lightness to get a more vibrant blue which matches the feel of the Dracula palette: `hsl(225 27% 51%)` ->
+`hsl(255 100% 75%)`. For Pro, the Van Helsing background, while extremely dark, actually uses a blue hued color, and we
+take that color and normalize its saturation and lightness to create a suitable "Pro" `blue`. Assuming you have the Van
+Helsing color converted to its HSL color form, simply take the hue of the Van Helsing background and apply the same saturation and lightness that all the other main colors use.
 
 If you are trying to reverse engineer the color schemes yourselves, `color(var(background) s(25%) l(55%))` for `coment`
 is honestly a very close, generic solution (assuming you have a background that matches the official). The official
