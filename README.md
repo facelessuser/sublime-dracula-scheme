@@ -78,51 +78,75 @@ Dracula Pro color palette. If you wish to create Pro color schemes that work wit
 - Morbius: `Dracula Pro (Morbius).sublime-color-scheme`
 - Van Helsing: `Dracula Pro (Van Helsing).sublime-color-scheme`
 
-Using the `Dracula (Alucard).sublime-color-scheme` as a base (found [here](https://github.com/facelessuser/sublime-dracula-scheme/blob/master/Dracula%20(Alucard)),
-simply change the palette colors below to the appropriate, official colors. These colors will be the same for all Pro
-color schemes.
+Using the `Dracula.sublime-color-scheme` as a base (found [here](https://github.com/facelessuser/sublime-dracula-scheme/blob/master/Dracula.sublime-color-scheme)),
+simply change the main palette colors below to the appropriate, official colors. These colors will be the same for all
+Pro color schemes except for `background` and `comment` which are variant specific colors.
 
 ```js
         // Static palette colors. These are constant through all variations.
-        "foreground": "hsl(60, 30%, 96%)", // #f8f8f2
-        "red": "hsl(0, 100%, 67%)",        // #ff5555
-        "orange": "hsl(31, 100%, 71%)",    // #ffb86c
-        "yellow": "hsl(65, 92%, 76%)",     // #f1fa8c
-        "green": "hsl(135, 94%, 65%)",     // #50fa7b
-        "cyan": "hsl(191, 97%, 77%)",      // #8be9fd
-        "blue": "hsl(225, 100%, 75%)",     // #809fff
-        "pink": "hsl(326, 100%, 74%)",     // #ff79c6
-        "purple": "hsl(265, 89%, 78%)",    // #bd93f9
+        "foreground": "",
+        "red": "",
+        "orange": "",
+        "yellow": "",
+        "green": "",
+        "cyan": "",
+        "blue": "", // <- Blue is not actually from the Dracula palette per se. See below for more info.
+        "pink": "",
+        "purple": "",
+
+        // Variant specific colors (change these for variants)
+        "background": "",
+        "comment": ""
 ```
 
-It should be noted that the official Dracula color scheme doesn't really specify a `blue` color, and in the classic
-color scheme, we specified the comment color as the `blue`, but in the Pro color schemes, it is defined as a color with
-the dominant hue as used in the Van Helsing variant (background hue) but lightened and saturated to match the other
-primary colors. We specify this color for any plugins or themes that attempt to reference `bluish` colors. While `blue`
-will not be used in normal syntax highlighting it is recommend as a good `accent` color for Van Helsing and Alucard and
-is used as an additional branch color in Merge etc.
+It should be noted that `blue` is not a defined color in the official Dracula color palette or Pro color palette. But
+many plugins in Sublime may reference `bluish` and just get back the `purple` color when using popups or creating
+regions. In the classic Dracula color scheme, we simply take the `comment` color, which has a bluish hue and normalize
+the saturation and lightness to get a more vibrant blue which matches the feel of the Dracula palette:
+`hsl(225 27% 51%)` -> `hsl(255 100% 75%)`. For Pro, the Van Helsing background, while extremely dark, actually uses a
+blue hued color, and we take that color and normalize its saturation and lightness to create a suitable "Pro" `blue`.
+Simply take the hue of the Van Helsing background and apply the same saturation and lightness that all the other main
+colors use. While `blue` is not used in the actual syntax highlighting of code, it is used as a recommend accent color
+for a couple of the color schemes, is used as an additional color in the commit graph in Merge and other places, and
+may be referenced by certain plugins or themes.
 
-Lastly, edit the "Variant Specific" section as shown below. The `background` and `comment` can be pulled directly from
-the official Dracula Pro color schemes. `accent` can really be anything, but we will mention our personal
-recommendations below as well.
+If you are trying to reverse engineer the color schemes yourselves, `color(var(background) s(25%) l(55%))` for `coment`
+is honestly a very close, generic solution (assuming you have a background that matches the official). The official
+color schemes seem to be very close to this with a few color schemes deviating slightly, but not in a significant way
+that most people would notice unless comparing the colors very, very closely.
+
+Next, we generically set `selection` and `line-highlight` to the following. Again, these might not be exactly what is
+used in the official Pro color schemes, but these look really good and are more than sufficient. If you have the\
+official color schemes and determine those to be superior, feel free to use those instead.
 
 ```js
         // Variant specific colors (change these for variants)
-        "background": "", // <-- Enter official color here
         "selection": "color(var(background) s(15%) l(30%))",
-        "comment": "color(var(background) s(25%) l(55%))", // <-- Use this or the official color from Dracula Pro
         "line-highlight": "color(var(background) s(25%) l(25%))",
-        "accent": "",  // <-- Pick a color you like or our recommendation below
 ```
 
-It can be noted that we use the general `color(var(background) s(25%) l(55%))` value for `comment`. In most cases, this
-seems to be pretty close to the actual color in most official Pro variants, but in some cases it may be slightly more
-off, but not to any extremely noticeable degree. I'm not sure much is gained by trying to target the exact comment color
-used in the official schemes, so we've chosen to use a more generic formula for comment, but purists can use the
-official color if desired.
+This gives a generally good line looking line highlight and selection. You could just as easily use the `line-highlight`
+setting for `selection` as well if you wanted the same, more subtle highlight for selections.
 
-Since Alucard uses classic colors for `background` and `comment`, we can post exactly what we use (see our comment about
-`blue` in Pro color schemes above):
+Lastly, we pick a color from the main palette for the `accent`. While we recommend using a palette color that matches
+the overall dominant hue in the color scheme, this can really be set to anything that is preferred. We will post our
+recommendations below:
+
+```js
+        "accent": "var(purple)" // Pro
+        "accent": "var(pink)"   // Buffy
+        "accent": "var(cyan)"   // Blade
+        "accent": "var(yellow)" // Lincoln
+        "accent": "var(red)"    // Morbius
+        "accent": "var(blue)"   // Van Helsing
+        "accent": "var(blue)"   // Alucard
+```
+
+The Pro version of Alucard is exactly like the classic Alucard except it uses the Pro color palette. Like above, one
+would update all the main colors with the official Dracula Pro colors except for `background` and `comment`.
+`background` and `comment` should use the same colors as the original Dracula color scheme which gives the color scheme
+an updated, but classic look. `selection` and `line-highlight` would use the same values as the rest of the Pro color
+schemes and use a recommended `accent` of `var(blue)`.
 
 ```js
         // Variant specific colors (change these for variants)
@@ -132,16 +156,6 @@ Since Alucard uses classic colors for `background` and `comment`, we can post ex
         "line-highlight": "color(var(background) s(25%) l(25%))",
         "accent": "var(blue)",
 ```
-
-Recommended accent values:
-
-- Pro: `var(purple)`
-- Buffy: `var(pink)`
-- Blade: `var(cyan)`
-- Lincoln: `var(yellow)`
-- Morbius: `var(red)`
-- Van Helsing: `var(blue)`
-- Alucard: `var(blue)`
 
 ## Customize Merge
 
