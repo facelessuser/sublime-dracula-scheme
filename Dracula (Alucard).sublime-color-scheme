@@ -313,7 +313,7 @@
         },
         {
             "name": "markup code",
-            "scope": "markup.raw",
+            "scope": "markup.raw - markup.raw.code-fence, markup.raw.code-fence.markdown-gfm",
             "foreground": "var(green)"
         },
         {
