@@ -233,7 +233,7 @@
         },
         {
             "name": "YAML Key",
-            "scope": "entity.name.tag.yaml",
+            "scope": "entity.name.tag.yaml, meta.mapping.key.yaml string.unquoted.plain.out.yaml",
             "foreground": "var(pink)"
         },
         {
