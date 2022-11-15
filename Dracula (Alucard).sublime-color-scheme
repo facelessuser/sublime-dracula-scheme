@@ -115,7 +115,7 @@
         },
         {
             "name": "Keyword",
-            "scope": "keyword - keyword.operator, keyword.operator.word",
+            "scope": "keyword - keyword.operator, keyword.operator.word, keyword.declaration.function, keyword.declaration.class",
             "foreground": "var(pink)"
         },
         {
