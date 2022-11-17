@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.1
+
+- **FIX**: Make `invalid.illegal` and `invalid.deprecated` highlight background less intense to ensure foreground has
+  better contrast.
+
 ## 1.4
 
 - **NEW**: Add pro variants.

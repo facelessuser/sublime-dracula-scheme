@@ -223,13 +223,13 @@
             "name": "Invalid",
             "scope": "invalid",
             "foreground": "var(foreground)",
-            "background": "var(pink)"
+            "background": "color(var(pink) blend(var(darken) 75%))",
         },
         {
             "name": "Invalid deprecated",
             "scope": "invalid.deprecated",
             "foreground": "var(foreground)",
-            "background": "var(orange)"
+            "background": "color(var(orange) blend(var(darken) 75%))",
         },
         {
             "name": "YAML Key",
