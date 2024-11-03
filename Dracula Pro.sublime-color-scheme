@@ -17,7 +17,7 @@
 
         // Variant specific colors (change these for variants)
         "background": "hsl(245, 14%, 15%)",                  // #22212c
-        "selection": "color(var(background) s(15%) l(30%))",    // #454158
+        "selection": "color(var(background) s(15%) l(30%))",    // #434158
         "comment": "color(var(background) s(25%) l(55%))",      // #7470a9
         "line-highlight": "color(var(background) s(25%) l(25%))",
         "accent": "var(purple)",
