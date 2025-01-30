@@ -1,0 +1,8 @@
+%YAML 1.2
+---
+extends: src/Dracula Pro.sublime-color-scheme.YAML
+
+name: Dracula Pro (Van Helsing)
+variables:
+    background: hsl(210, 15%, 5%)  # #0b0d0f
+    accent: var(blue)
