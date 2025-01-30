@@ -2,36 +2,27 @@
     "name": "Dracula Pro (Blade)",
     "author": "Isaac Muse",
     "comments": "Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using Dracula Pro color palette (Zeno Rocha)",
-    "variables":
-    {
-        // Static palette colors. These are constant through all variations.
-        "foreground": "hsl(60, 30%, 96%)", // #f8f8f2
-        "red": "hsl(10, 100%, 75%)",       // #ff9580
-        "orange": "hsl(35, 100%, 75%)",    // #ffca80
-        "yellow": "hsl(60, 100%, 75%)",    // #ffff80
-        "green": "hsl(115, 100%, 75%)",    // #8aff80
-        "cyan": "hsl(170, 100%, 75%)",     // #80ffea
-        "blue": "hsl(210, 100%, 75%)",     // #80bfff
-        "pink": "hsl(330, 100%, 75%)",     // #ff80bf
-        "purple": "hsl(250, 100%, 75%)",   // #9580ff
-
-        // Variant specific colors (change these for variants)
-        "background": "hsl(169, 14%, 15%)",                  // #212c2a
-        "selection": "color(var(background) s(15%) l(30%))",    // #415854
-        "comment": "color(var(background) s(25%) l(55%))",      // #70a99e
+    "variables": {
+        "foreground": "hsl(60, 30%, 96%)",
+        "red": "hsl(10, 100%, 75%)",
+        "orange": "hsl(35, 100%, 75%)",
+        "yellow": "hsl(60, 100%, 75%)",
+        "green": "hsl(115, 100%, 75%)",
+        "cyan": "hsl(170, 100%, 75%)",
+        "blue": "hsl(210, 100%, 75%)",
+        "pink": "hsl(330, 100%, 75%)",
+        "purple": "hsl(250, 100%, 75%)",
+        "background": "hsl(169, 14%, 15%)",
+        "selection": "color(var(background) s(15%) l(30%))",
+        "comment": "color(var(background) s(25%) l(55%))",
         "line-highlight": "color(var(background) s(25%) l(25%))",
         "accent": "var(cyan)",
-
-        // UI elements derived from color schemes
         "caret": "var(foreground)",
         "block-caret": "var(caret)",
         "highlight": "var(yellow)",
         "shadow": "hsl(0, 0%, 0%)",
         "stack": "color(var(comment) s(100%) l(75%))",
         "darken": "hsl(0, 0%, 13%)",
-
-        // Sublime has difficulty detecting purplish from bluish, etc.
-        // Define all colors to ensure correct colorish values.
         "--redish": "var(red)",
         "--orangeish": "var(orange)",
         "--yellowish": "var(yellow)",
@@ -39,10 +30,9 @@
         "--cyanish": "var(cyan)",
         "--bluish": "var(blue)",
         "--pinkish": "var(pink)",
-        "--purplish": "var(purple)",
+        "--purplish": "var(purple)"
     },
-    "globals":
-    {
+    "globals": {
         "accent": "var(accent)",
         "active_guide": "var(stack)",
         "background": "var(background)",
@@ -69,8 +59,7 @@
         "tags_foreground": "var(pink)",
         "tags_options": "stippled_underline"
     },
-    "rules":
-    [
+    "rules": [
         {
             "name": "Comment",
             "scope": "comment, punctuation.definition.comment",
@@ -223,13 +212,13 @@
             "name": "Invalid",
             "scope": "invalid",
             "foreground": "var(foreground)",
-            "background": "color(var(pink) blend(var(darken) 75%))",
+            "background": "color(var(pink) blend(var(darken) 75%))"
         },
         {
             "name": "Invalid deprecated",
             "scope": "invalid.deprecated",
             "foreground": "var(foreground)",
-            "background": "color(var(orange) blend(var(darken) 75%))",
+            "background": "color(var(orange) blend(var(darken) 75%))"
         },
         {
             "name": "YAML Key",
@@ -415,7 +404,7 @@
         },
         {
             "scope": "diff.border.merge-left",
-            "background": "color(var(green) blend(var(darken) 50%))",
+            "background": "color(var(green) blend(var(darken) 50%))"
         },
         {
             "scope": "diff.inserted.merge-right",
@@ -429,19 +418,19 @@
         },
         {
             "scope": "diff.border.merge-right",
-            "background": "color(var(green) blend(var(darken) 50%))",
+            "background": "color(var(green) blend(var(darken) 50%))"
         },
         {
             "scope": "diff.border.merge-conflict",
-            "background": "color(var(red) blend(var(darken) 50%))",
+            "background": "color(var(red) blend(var(darken) 50%))"
         },
         {
             "scope": "diff.border.merge-merged",
-            "background": "color(var(purple) blend(var(darken) 50%))",
+            "background": "color(var(purple) blend(var(darken) 50%))"
         },
         {
             "scope": "blame.border",
-            "background": "color(var(background) lightness(+ 15%))",
+            "background": "color(var(background) lightness(+ 15%))"
         }
     ]
 }

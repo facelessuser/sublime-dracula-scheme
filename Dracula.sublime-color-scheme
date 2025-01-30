@@ -2,36 +2,27 @@
     "name": "Dracula",
     "author": "Isaac Muse",
     "comments": "Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using Dracula color palette (Zeno Rocha)",
-    "variables":
-    {
-        // Static palette colors. These are constant through all variations.
-        "foreground": "hsl(60, 30%, 96%)", // #f8f8f2
-        "red": "hsl(0, 100%, 67%)",        // #ff5555
-        "orange": "hsl(31, 100%, 71%)",    // #ffb86c
-        "yellow": "hsl(65, 92%, 76%)",     // #f1fa8c
-        "green": "hsl(135, 94%, 65%)",     // #50fa7b
-        "cyan": "hsl(191, 97%, 77%)",      // #8be9fd
-        "blue": "hsl(225, 100%, 75%)",     // #809fff
-        "pink": "hsl(326, 100%, 74%)",     // #ff79c6
-        "purple": "hsl(265, 89%, 78%)",    // #bd93f9
-
-        // Variant specific colors (change these for variants)
-        "background": "hsl(231, 15%, 18%)",        // #282a36
-        "selection": "hsl(232, 14%, 31%)",         // #44475a
-        "comment": "color(var(blue) s(27%) l(51%))",  // #6272a4
+    "variables": {
+        "foreground": "hsl(60, 30%, 96%)",
+        "red": "hsl(0, 100%, 67%)",
+        "orange": "hsl(31, 100%, 71%)",
+        "yellow": "hsl(65, 92%, 76%)",
+        "green": "hsl(135, 94%, 65%)",
+        "cyan": "hsl(191, 97%, 77%)",
+        "blue": "hsl(225, 100%, 75%)",
+        "pink": "hsl(326, 100%, 74%)",
+        "purple": "hsl(265, 89%, 78%)",
+        "background": "hsl(231, 15%, 18%)",
+        "selection": "hsl(232, 14%, 31%)",
+        "comment": "color(var(blue) s(27%) l(51%))",
         "line-highlight": "var(selection)",
         "accent": "var(blue)",
-
-        // UI elements derived from color schemes
         "caret": "var(foreground)",
         "block-caret": "var(caret)",
         "highlight": "var(yellow)",
         "shadow": "hsl(0, 0%, 0%)",
         "stack": "color(var(comment) s(100%) l(75%))",
         "darken": "hsl(0, 0%, 13%)",
-
-        // Sublime has difficulty detecting purplish from bluish, etc.
-        // Define all colors to ensure correct colorish values.
         "--redish": "var(red)",
         "--orangeish": "var(orange)",
         "--yellowish": "var(yellow)",
@@ -39,10 +30,9 @@
         "--cyanish": "var(cyan)",
         "--bluish": "var(blue)",
         "--pinkish": "var(pink)",
-        "--purplish": "var(purple)",
+        "--purplish": "var(purple)"
     },
-    "globals":
-    {
+    "globals": {
         "accent": "var(accent)",
         "active_guide": "var(stack)",
         "background": "var(background)",
@@ -69,8 +59,7 @@
         "tags_foreground": "var(pink)",
         "tags_options": "stippled_underline"
     },
-    "rules":
-    [
+    "rules": [
         {
             "name": "Comment",
             "scope": "comment, punctuation.definition.comment",
@@ -223,13 +212,13 @@
             "name": "Invalid",
             "scope": "invalid",
             "foreground": "var(foreground)",
-            "background": "color(var(pink) blend(var(darken) 75%))",
+            "background": "color(var(pink) blend(var(darken) 75%))"
         },
         {
             "name": "Invalid deprecated",
             "scope": "invalid.deprecated",
             "foreground": "var(foreground)",
-            "background": "color(var(orange) blend(var(darken) 75%))",
+            "background": "color(var(orange) blend(var(darken) 75%))"
         },
         {
             "name": "YAML Key",
@@ -415,7 +404,7 @@
         },
         {
             "scope": "diff.border.merge-left",
-            "background": "color(var(green) blend(var(darken) 50%))",
+            "background": "color(var(green) blend(var(darken) 50%))"
         },
         {
             "scope": "diff.inserted.merge-right",
@@ -429,19 +418,19 @@
         },
         {
             "scope": "diff.border.merge-right",
-            "background": "color(var(green) blend(var(darken) 50%))",
+            "background": "color(var(green) blend(var(darken) 50%))"
         },
         {
             "scope": "diff.border.merge-conflict",
-            "background": "color(var(red) blend(var(darken) 50%))",
+            "background": "color(var(red) blend(var(darken) 50%))"
         },
         {
             "scope": "diff.border.merge-merged",
-            "background": "color(var(purple) blend(var(darken) 50%))",
+            "background": "color(var(purple) blend(var(darken) 50%))"
         },
         {
             "scope": "blame.border",
-            "background": "color(var(background) lightness(+ 15%))",
+            "background": "color(var(background) lightness(+ 15%))"
         }
     ]
 }

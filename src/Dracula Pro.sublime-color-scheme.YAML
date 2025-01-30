@@ -1,0 +1,28 @@
+%YAML 1.2
+---
+extends: src/Dracula.sublime-color-scheme.YAML
+
+comments: 'Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using Dracula
+    Pro color palette (Zeno Rocha)'
+name: Dracula Pro
+variables:
+    # Static palette colors. These are constant through all variations.
+    foreground: hsl(60, 30%, 96%)  # #f8f8f2
+    red: hsl(10, 100%, 75%)        # #ff9580
+    orange: hsl(35, 100%, 75%)     # #ffca80
+    yellow: hsl(60, 100%, 75%)     # #ffff80
+    green: hsl(115, 100%, 75%)     # #8aff80
+    cyan: hsl(170, 100%, 75%)      # #80ffea
+    blue: hsl(210, 100%, 75%)      # #80bfff
+    pink: hsl(330, 100%, 75%)      # #ff80bf
+    purple: hsl(250, 100%, 75%)    # #9580ff
+
+    # Variant specific colors (change these for variants)
+    background: hsl(245, 14%, 15%)                        # #22212c
+    selection: color(var(background) s(15%) l(30%))       # #434158
+    comment: color(var(background) s(25%) l(55%))         # #7470a9
+    line-highlight: color(var(background) s(25%) l(25%))  # #323050
+    accent: var(purple)
+
+    # UI elements derived from color schemes
+    highlight: var(yellow)
