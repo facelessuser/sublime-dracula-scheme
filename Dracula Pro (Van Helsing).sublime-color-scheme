@@ -431,6 +431,19 @@
         {
             "scope": "blame.border",
             "background": "color(var(background) lightness(+ 15%))"
+        },
+        {
+            "scope": "entity.name.section.sublime-syntax",
+            "foreground": "var(orange)",
+            "font_style": "bold"
+        },
+        {
+            "scope": "entity.name.label.branch-point.sublime-syntax, variable.other.branch-point.sublime-syntax",
+            "foreground": "var(red)"
+        },
+        {
+            "scope": "storage.modifier.clear-scopes.sublime-syntax",
+            "foreground": "var(red)"
         }
     ]
 }
