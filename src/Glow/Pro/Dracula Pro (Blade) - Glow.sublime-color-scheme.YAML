@@ -1,0 +1,9 @@
+%YAML 1.2
+---
+extends: ../../Pro/Dracula Pro (Blade).sublime-color-scheme.YAML
+overrides:
+- ../Hidden-Glow.sublime-color-scheme.YAML
+
+name: Dracula Pro (Blade) - Glow
+comments: 'Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using Dracula
+    Pro color palette (Zeno Rocha) and glowing font styles'
