@@ -1,7 +1,7 @@
 class Vampire:
     def __init__(self, props):
         self.location = props['location']
-        self.birthPlace = props['birthPlace']
+        self.birthDate = props['birthDate']
         self.deathDate = props['deathDate']
         self.weaknesses = props['weaknesses']
 
