@@ -33,46 +33,14 @@ def yaml_load(stream, loader=yaml.Loader):
         construct_mapping
     )
 
-    # Add !!Regex support during translation
-    Loader.add_constructor(
-        "tag:yaml.org,2002:regex",
-        Loader.construct_yaml_str
-    )
-
     return yaml.load(stream, Loader)
 
 
 def yaml_dump(data, stream=None, dumper=yaml.Dumper, **kwargs):
     """Special dumper wrapper to modify the yaml dumper."""
 
-    def should_use_block(value):
-        """
-        Control when to use block style.
-
-        http://stackoverflow.com/questions/8640959/how-can-i-control-what-scalar-form-pyyaml-uses-for-my-data
-        """
-        for c in "\u000a\u000d\u001c\u001d\u001e\u0085\u2028\u2029":
-            if c in value:
-                return True
-        return False
-
-    def my_represent_scalar(self, tag, value, style=None):
-        """Scalar."""
-        if style is None:
-            if should_use_block(value):
-                style = '|'
-            else:
-                style = self.default_style
-
-        node = yaml.representer.ScalarNode(tag, value, style=style)
-        if self.alias_key is not None:
-            self.represented_objects[self.alias_key] = node
-        return node
-
     class Dumper(dumper):
         """Custom dumper."""
-
-    Dumper.represent_scalar = my_represent_scalar
 
     # Handle Ordered Dict
     Dumper.add_representer(
@@ -163,15 +131,37 @@ def parse(file, obj2=None, relative='.'):
     return obj
 
 
-# Parse the YAML source to generate JSON color schemes.
-for file in glob.glob('**/*.sublime-color-scheme.YAML', recursive=True):
-    folder = os.path.dirname(file)
-    name = f'./{os.path.basename(file)}'
-    output = f"{name}".rstrip('.YAML')
-    if output.lower().startswith('./hidden'):
-        continue
-    obj = parse(name, None, folder)
-    print(f'Building: {file}\n    -> {output}')
-    with open(output, 'w') as f:
-        f.write(json.dumps(obj, sort_keys=False, indent=4, separators=(',', ': ')) + '\n')
+if __name__ == "__main__":
+    import argparse
 
+    parser = argparse.ArgumentParser(prog='build.py', description='Build tool for color schemes.')
+    parser.add_argument('--build', '-b', help='Build a specific color schemes.')
+    parser.add_argument('--convert', '-c', help="Convert a scheme into a YAML file.")
+    parser.add_argument('--output', '-o', default='.', help="Output path.")
+    args = parser.parse_args()
+
+    if not args.convert:
+        if args.build:
+            files = [args.build]
+        else:
+            files = glob.iglob('**/*.sublime-color-scheme.YAML', recursive=True)
+
+        # Parse the YAML source to generate JSON color schemes.
+        for file in files:
+            folder = os.path.dirname(file)
+            name = f'./{os.path.basename(file)}'
+            output = os.path.join(args.output, f"{name}".rstrip('.YAML'))
+            if name.lower().startswith('./hidden'):
+                continue
+            obj = parse(name, None, folder)
+            print(f'Building: {file}\n    -> {output}')
+            with open(output, 'w') as f:
+                f.write(json.dumps(obj, sort_keys=False, indent=4, separators=(',', ': ')) + '\n')
+    elif args.convert:
+        with open(args.convert, 'r') as f:
+            j = json.loads(f.read())
+            yml = yaml_dumps(j)
+        output = os.path.basename(args.convert) + '.YAML'
+        output = os.path.join(args.output, output)
+        with open(output, 'w') as f:
+            f.write(yml)
