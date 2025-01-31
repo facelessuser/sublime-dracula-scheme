@@ -155,8 +155,9 @@ def parse(file, obj2=None, relative='.'):
         obj = parse(extend, obj, base)
 
     for o in overrides:
-        with open(o, 'r') as f:
-            i = yaml_load(f.read())
+        yml = os.path.join(relative, o) if o.startswith(('./', '../')) else o
+        base = os.path.dirname(yml)
+        i = parse(yml, None, base)
         override_keys(obj, i)
 
     return obj
@@ -167,7 +168,7 @@ for file in glob.glob('**/*.sublime-color-scheme.YAML', recursive=True):
     folder = os.path.dirname(file)
     name = f'./{os.path.basename(file)}'
     output = f"{name}".rstrip('.YAML')
-    if output.lower().startswith('hidden'):
+    if output.lower().startswith('./hidden'):
         continue
     obj = parse(name, None, folder)
     print(f'Building: {file}\n    -> {output}')
