@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-extends: src/Dracula.sublime-color-scheme.YAML
+extends: ./Dracula.sublime-color-scheme.YAML
 
 name: Dracula (Alucard)
 variables:

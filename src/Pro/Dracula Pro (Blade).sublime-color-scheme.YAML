@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-extends: src/Dracula Pro.sublime-color-scheme.YAML
+extends: ./Dracula Pro.sublime-color-scheme.YAML
 
 name: Dracula Pro (Blade)
 variables:

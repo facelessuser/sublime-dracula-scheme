@@ -134,10 +134,11 @@ def override_keys(obj, obj2):
             obj[key] = copy.deepcopy(obj2[key])
 
 
-def parse(file, obj2=None):
+def parse(file, obj2=None, relative='.'):
     """Extend a color scheme."""
-
-    with open(file, 'r') as f:
+    yml = os.path.join(relative, file) if file.startswith(('./', '../')) else file
+    base = os.path.dirname(yml)
+    with open(yml, 'r') as f:
         obj = yaml_load(f.read())
 
     extend = ''
@@ -151,7 +152,7 @@ def parse(file, obj2=None):
         override_keys(obj, obj2)
 
     if extend:
-        obj = parse(extend, obj)
+        obj = parse(extend, obj, base)
 
     for o in overrides:
         with open(o, 'r') as f:
@@ -162,11 +163,13 @@ def parse(file, obj2=None):
 
 
 # Parse the YAML source to generate JSON color schemes.
-for file in glob.glob('**/*.sublime-color-scheme.YAML'):
-    output = f"{os.path.basename(file)}".rstrip('.YAML')
+for file in glob.glob('**/*.sublime-color-scheme.YAML', recursive=True):
+    folder = os.path.dirname(file)
+    name = f'./{os.path.basename(file)}'
+    output = f"{name}".rstrip('.YAML')
     if output.lower().startswith('hidden'):
         continue
-    obj = parse(file)
+    obj = parse(name, None, folder)
     print(f'Building: {file}\n    -> {output}')
     with open(output, 'w') as f:
         f.write(json.dumps(obj, sort_keys=False, indent=4, separators=(',', ': ')) + '\n')
