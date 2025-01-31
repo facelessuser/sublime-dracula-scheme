@@ -154,6 +154,17 @@ of the original Dracula.
     "color_scheme": "Packages/Color Scheme - Dracula/Dracula Pro (Van Helsing).sublime-color-scheme",
 ```
 
+## Modifying Color Schemes
+
+To modify color schemes, make sure you've installed PyYAML.
+
+```console
+$ pip install pyyaml
+```
+
+Changes should be made under the `src` folder in the appropriate YAML file. Then `build.py` should be run to generate
+the `.sublime-color-scheme` files.
+
 ## Customize Merge
 
 The [Dracula Merge theme](https://github.com/facelessuser/merge-dracula-theme) theme dynamically sources its colors
