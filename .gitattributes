@@ -5,6 +5,7 @@
 .github/                        export-ignore
 screenshots/                    export-ignore
 src/                            export-ignore
+example/						export-ignore
 
 .gitattributes                  export-ignore
 .gitignore                      export-ignore
