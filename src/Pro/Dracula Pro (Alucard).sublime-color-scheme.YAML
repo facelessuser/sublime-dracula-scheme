@@ -1,9 +1,97 @@
 %YAML 1.2
 ---
-extends: ./Dracula Pro.sublime-color-scheme.YAML
+extends: ../Classic/Dracula.sublime-color-scheme.YAML
 
+comments: 'Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using an approximation of the Dracula
+    Pro light color palette (Zeno Rocha)'
 name: Dracula Pro (Alucard)
 variables:
-    background: hsl(231, 15%, 18%)  # #282a36
-    comment: hsl(225, 27%, 51%)     # #707ea9
-    accent: var(blue)
+    # Static palette colors. These are constant through all variations.
+    foreground: '#1F1F1F'
+    red: '#CB3A2A'
+    orange: '#A34D14'
+    yellow: '#836E15'
+    green: '#14720A'
+    cyan: '#036A96'
+    blue: '#285077'
+    pink: '#A3134D'
+    purple: '#644AC9'
+
+    # Variant specific colors (change these for variants)
+    background: '#F5F5F5'
+    selection: '#CFCFDE'
+    comment: '#635D97'
+    line-highlight: '#DCDEEF'
+    accent: var(purple)
+
+    # UI elements derived from color schemes
+    highlight: var(comment)
+
+    lighten: hsl(0, 0%, 100%)
+
+globals:
+    gutter_foreground: var(comment)
+    gutter_foreground_highlight: var(foreground)
+    selection_border: color(var(selection) l(75%))
+
+
+rules:
+-   name: Invalid
+    scope: invalid
+    background: color(var(pink) blend(var(lighten) 25%))
+
+-   name: Invalid deprecated
+    scope: invalid.deprecated
+    background: color(var(orange) blend(var(lighten) 25%))
+
+-   scope: diff.deleted
+    background: color(var(pink) blend(var(lighten) 17%))
+
+-   scope: diff.deleted.char
+    background: color(var(pink) blend(var(lighten) 35%))
+
+-   scope: diff.inserted
+    background: color(var(green) blend(var(lighten) 17%))
+
+-   scope: diff.inserted.char
+    background: color(var(green) blend(var(lighten) 35%))
+
+-   scope: diff.inserted.merge-left
+    background: color(var(green) blend(var(lighten) 17%))
+    foreground_adjust: l(+ 5%)
+
+-   scope: diff.inserted.char.merge-left
+    background: color(var(green) blend(var(lighten) 35%))
+    foreground_adjust: l(+ 10%)
+
+-   scope: diff.border.merge-left
+    background: color(var(green) blend(var(lighten) 50%))
+
+-   scope: diff.inserted.merge-right
+    background: color(var(yellow) blend(var(lighten) 17%))
+    foreground_adjust: l(+ 5%)
+
+-   scope: diff.inserted.char.merge-right
+    background: color(var(yellow) blend(var(lighten) 35%))
+    foreground_adjust: l(+ 10%)
+
+-   scope: diff.border.merge-right
+    background: color(var(green) blend(var(lighten) 50%))
+
+-   scope: diff.border.merge-conflict
+    background: color(var(red) blend(var(lighten) 50%))
+
+-   scope: diff.border.merge-merged
+    background: color(var(purple) blend(var(lighten) 50%))
+
+-   scope: diff.fill
+    background: color(var(background) l(- 5%))
+
+-   scope: diff.deleted.side-by-side
+    background: color(var(background) l(- 5%))
+    foreground_adjust: l(- 5%)
+
+-   scope: diff.inserted.side-by-side
+    background: color(var(background) l(- 5%))
+    foreground_adjust: l(- 5%)
+
