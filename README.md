@@ -39,10 +39,9 @@ any official Dracula theme.**
 
 The official [Dracula Pro](https://draculatheme.com/pro) color schemes changed up the color palette of the original,
 classic Dracula and added new variants such as Buffy, Van Helsing, and others. The author offers a number of supported
-themes (and additional goodies) for a price. This gives you access to current and future themes and also provides
-support. For anyone interested in the wealth of themes that may be offered by the official author, we recommend you
-check out out the official Dracula Pro. If you don't mind a non-official interpretation on Dracula Pro, or prefer our
-take on the Pro theme, we offer a number a number of Dracula Pro color schemes.
+themes (and additional goodies) for a price. For anyone interested in the wealth of themes that may be offered by the
+official author, we recommend you check out out the official Dracula Pro. If you don't mind a non-official
+interpretation on Dracula Pro, or prefer our take on the Pro theme, then give these color schemes a try.
 
 Our themes are simply inspired by the color palette that can easily be acquired by visiting the [Dracula Pro](https://draculatheme.com/pro)
 site. The site has all the colors on display, and the few that are not can be inferred from the ones that are present.
