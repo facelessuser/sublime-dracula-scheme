@@ -26,14 +26,12 @@ variables:
 
     # UI elements derived from color schemes
     highlight: var(comment)
-
     lighten: hsl(0, 0%, 100%)
 
 globals:
     gutter_foreground: var(comment)
     gutter_foreground_highlight: var(foreground)
     selection_border: color(var(selection) l(75%))
-
 
 rules:
 -   name: Invalid
