@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.6
+
+-   **NEW**: Rename our custom Alucard to Nosferatu in order to avoid conflict with the offical Dracula Pro light theme
+    that shares the same name.
+-   **NEW**: Non-pro Alucard has been removed and line highlight improvements are now included in classic Dracula by
+    default.
+-   **NEW**: Add our take on the official Dracula Pro Alucard light theme.
+
 ## 1.5
 
 -   **NEW**: Add highlight support for PackageDev syntax scopes.
