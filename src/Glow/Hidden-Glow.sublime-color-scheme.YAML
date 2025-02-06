@@ -1,0 +1,11 @@
+%YAML 1.2
+---
+rules:
+    -   scope: entity.name.section.sublime-syntax
+        font_style: bold glow
+
+    -   scope: entity.name.label.branch-point.sublime-syntax, variable.other.branch-point.sublime-syntax
+        font_style: glow
+
+    -   scope: storage.modifier.clear-scopes.sublime-syntax
+        font_style: glow
