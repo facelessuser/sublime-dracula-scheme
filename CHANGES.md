@@ -1,8 +1,8 @@
 # Changelog
 
-## 1.8
+## 2.0
 
--   **NEW**: Update expectation of installation to be `Color Scheme - Dracula Neue`.
+-   **NEW**: Rebrand as Dracula Neue.
 
 ## 1.7
 
