@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.7
+
+-   **NEW**: Rename Dracula to Dracula Classic so we can release this without conflicting with the official Dracula
+    color scheme on PackageControl.
+
 ## 1.6
 
 -   **NEW**: Rename our custom Alucard to Nosferatu in order to avoid conflict with the offical Dracula Pro light theme

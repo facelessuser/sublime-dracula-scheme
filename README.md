@@ -25,7 +25,7 @@ Sublime Text as Sublime Merge will find the color schemes in Sublime Text.
 For Sublime Text, edit your `Preferences.sublime-settings` file to use the Dracula theme:
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula/Dracula.sublime-color-scheme",
+    "color_scheme": "Packages/Color Scheme - Dracula/Dracula Classic.sublime-color-scheme",
 ```
 
 For Sublime Merge, once installed, it is recommended to install the [Sublime Merge theme](https://github.com/facelessuser/merge-dracula-theme)

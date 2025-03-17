@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-extends: ../Classic/Dracula.sublime-color-scheme.YAML
+extends: ../Classic/Dracula Classic.sublime-color-scheme.YAML
 
 comments: 'Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using an approximation of the Dracula
     Pro light color palette (Zeno Rocha)'
