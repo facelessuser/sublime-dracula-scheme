@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.8
+
+-   **NEW**: Update expectation of installation to be `Color Scheme - Dracula Neue`.
+
 ## 1.7
 
 -   **NEW**: Rename Dracula to Dracula Classic so we can release this without conflicting with the official Dracula

@@ -1,4 +1,4 @@
-# Color Scheme - Dracula
+# Color Scheme - Dracula Neue
 
 This is a Sublime Text (and Merge) color scheme using the [Dracula color palette](https://github.com/dracula/dracula-theme).
 Our implementation of Dracula uses the Sublime Text Mariana color scheme as a starting point and makes some alterations
@@ -19,14 +19,16 @@ Dracula, simply swapping out the color palette.
 
 ## Install
 
-Git clone the project or download the project to your Sublime Text or Sublime Merge Packages folder as
-`Color Scheme - Dracula`. If you want to use it in both Sublime Merge and Sublime Text, you only have to install it in
+Use Package Control (should be available soon).
+
+Or you can git clone the project or download the project to your Sublime Text or Sublime Merge Packages folder as
+`Color Scheme - Dracula Neue`. If you want to use it in both Sublime Merge and Sublime Text, you only have to install it in
 Sublime Text as Sublime Merge will find the color schemes in Sublime Text.
 
 For Sublime Text, edit your `Preferences.sublime-settings` file to use the Dracula theme:
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula/Dracula Classic.sublime-color-scheme",
+    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Classic.sublime-color-scheme",
 ```
 
 For Sublime Merge, once installed, it is recommended to install the [Sublime Merge theme](https://github.com/facelessuser/merge-dracula-theme)
@@ -88,7 +90,7 @@ colors.
 ![Pro](screenshots/Text%20-%20Pro.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula/Dracula Pro.sublime-color-scheme",
+    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro.sublime-color-scheme",
 ```
 
 ### Dracula Pro (Buffy)
@@ -96,7 +98,7 @@ colors.
 ![Buffy](screenshots/Text%20-%20Buffy.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula/Dracula Pro (Buffy).sublime-color-scheme",
+    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro (Buffy).sublime-color-scheme",
 ```
 
 ### Dracula Pro (Blade)
@@ -104,7 +106,7 @@ colors.
 ![Blade](screenshots/Text%20-%20Blade.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula/Dracula Pro (Blade).sublime-color-scheme",
+    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro (Blade).sublime-color-scheme",
 ```
 
 ### Dracula Pro (Lincoln)
@@ -112,7 +114,7 @@ colors.
 ![Lincoln](screenshots/Text%20-%20Lincoln.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula/Dracula Pro (Lincoln).sublime-color-scheme",
+    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro (Lincoln).sublime-color-scheme",
 ```
 
 ### Dracula Pro (Morbius)
@@ -120,7 +122,7 @@ colors.
 ![Morbius](screenshots/Text%20-%20Morbius.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula/Dracula Pro (Morbius).sublime-color-scheme",
+    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro (Morbius).sublime-color-scheme",
 ```
 
 ### Dracula Pro (Van Helsing)
@@ -128,7 +130,7 @@ colors.
 ![Van Helsing](screenshots/Text%20-%20Van%20Helsing.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula/Dracula Pro (Van Helsing).sublime-color-scheme",
+    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro (Van Helsing).sublime-color-scheme",
 ```
 
 ### Dracula Pro (Alucard)
@@ -136,7 +138,7 @@ colors.
 ![Alucard](screenshots/Text%20-%20Alucard.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula/Dracula Pro (Alucard).sublime-color-scheme",
+    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro (Alucard).sublime-color-scheme",
 ```
 
 ### Dracula Pro (Nosferatu)
@@ -148,7 +150,7 @@ of the original Dracula.
 ![Nosferatu](screenshots/Text%20-%20Nosferatu.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula/Dracula Pro (Nosferatu).sublime-color-scheme",
+    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro (Nosferatu).sublime-color-scheme",
 ```
 
 ## Modifying Color Schemes
