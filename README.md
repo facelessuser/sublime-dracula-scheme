@@ -2,7 +2,8 @@
 
 This is a Sublime Text (and Merge) color scheme using the [Dracula color palette](https://github.com/dracula/dracula-theme).
 Our implementation of Dracula uses the Sublime Text Mariana color scheme as a starting point and makes some alterations
-to better accommodate the Dracula color palette.
+to better accommodate the Dracula color palette. This is not the "official" Dracula color scheme but one that takes a
+slightly different approach on the syntax highlighting.
 
 We provide both classic and Pro variants of Dracula in our color schemes. The Pro variants use the color palette which
 can be easily be obtained from [Dracula Pro's official site](https://draculatheme.com/pro).
