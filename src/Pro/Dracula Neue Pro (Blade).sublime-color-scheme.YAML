@@ -1,8 +1,8 @@
 %YAML 1.2
 ---
-extends: ./Dracula Pro.sublime-color-scheme.YAML
+extends: ./Dracula Neue Pro.sublime-color-scheme.YAML
 
-name: Dracula Pro (Blade)
+name: Dracula Neue Pro (Blade)
 variables:
     background: hsl(169, 14%, 15%)  # #212c2a
     accent: var(cyan)

@@ -1,8 +1,8 @@
 %YAML 1.2
 ---
-extends: ./Dracula Pro.sublime-color-scheme.YAML
+extends: ./Dracula Neue Pro.sublime-color-scheme.YAML
 
-name: Dracula Pro (Nosferatu)
+name: Dracula Neue Pro (Nosferatu)
 variables:
     background: hsl(231, 15%, 18%)  # #282a36
     comment: hsl(225, 27%, 51%)     # #707ea9

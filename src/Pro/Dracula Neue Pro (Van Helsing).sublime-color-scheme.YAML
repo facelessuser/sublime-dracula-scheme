@@ -1,8 +1,8 @@
 %YAML 1.2
 ---
-extends: ./Dracula Pro.sublime-color-scheme.YAML
+extends: ./Dracula Neue Pro.sublime-color-scheme.YAML
 
-name: Dracula Pro (Van Helsing)
+name: Dracula Neue Pro (Van Helsing)
 variables:
     background: hsl(210, 15%, 5%)  # #0b0d0f
     accent: var(blue)

@@ -1,10 +1,10 @@
 %YAML 1.2
 ---
-extends: ../Classic/Dracula Classic.sublime-color-scheme.YAML
+extends: ../Classic/Dracula Neue Classic.sublime-color-scheme.YAML
 
 comments: 'Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using Dracula
     Pro color palette (Zeno Rocha)'
-name: Dracula Pro
+name: Dracula Neue Pro
 variables:
     # Static palette colors. These are constant through all variations.
     foreground: hsl(60, 30%, 96%)  # #f8f8f2

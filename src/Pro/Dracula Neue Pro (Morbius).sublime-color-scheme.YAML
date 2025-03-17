@@ -1,8 +1,8 @@
 %YAML 1.2
 ---
-extends: ./Dracula Pro.sublime-color-scheme.YAML
+extends: ./Dracula Neue Pro.sublime-color-scheme.YAML
 
-name: Dracula Pro (Morbius)
+name: Dracula Neue Pro (Morbius)
 variables:
     background: hsl(355, 14%, 15%)  # #2c2122
     accent: var(red)

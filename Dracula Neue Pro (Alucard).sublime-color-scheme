@@ -1,25 +1,25 @@
 {
-    "name": "Dracula Pro (Blade)",
+    "name": "Dracula Neue Pro (Alucard)",
     "author": "Isaac Muse",
-    "comments": "Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using Dracula Pro color palette (Zeno Rocha)",
+    "comments": "Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using an approximation of the Dracula Pro light color palette (Zeno Rocha)",
     "variables": {
-        "foreground": "hsl(60, 30%, 96%)",
-        "red": "hsl(10, 100%, 75%)",
-        "orange": "hsl(35, 100%, 75%)",
-        "yellow": "hsl(60, 100%, 75%)",
-        "green": "hsl(115, 100%, 75%)",
-        "cyan": "hsl(170, 100%, 75%)",
-        "blue": "hsl(210, 100%, 75%)",
-        "pink": "hsl(330, 100%, 75%)",
-        "purple": "hsl(250, 100%, 75%)",
-        "background": "hsl(169, 14%, 15%)",
-        "selection": "color(var(background) s(15%) l(30%))",
-        "comment": "color(var(background) s(25%) l(55%))",
-        "line-highlight": "color(var(background) s(25%) l(25%))",
-        "accent": "var(cyan)",
+        "foreground": "#1F1F1F",
+        "red": "#CB3A2A",
+        "orange": "#A34D14",
+        "yellow": "#836E15",
+        "green": "#14720A",
+        "cyan": "#036A96",
+        "blue": "#285077",
+        "pink": "#A3134D",
+        "purple": "#644AC9",
+        "background": "#F5F5F5",
+        "selection": "#CFCFDE",
+        "comment": "#635D97",
+        "line-highlight": "#DCDEEF",
+        "accent": "var(purple)",
         "caret": "var(foreground)",
         "block-caret": "var(caret)",
-        "highlight": "var(yellow)",
+        "highlight": "var(comment)",
         "shadow": "hsl(0, 0%, 0%)",
         "stack": "color(var(comment) s(100%) l(75%))",
         "darken": "hsl(0, 0%, 13%)",
@@ -30,7 +30,8 @@
         "--cyanish": "var(cyan)",
         "--bluish": "var(blue)",
         "--pinkish": "var(pink)",
-        "--purplish": "var(purple)"
+        "--purplish": "var(purple)",
+        "lighten": "hsl(0, 0%, 100%)"
     },
     "globals": {
         "accent": "var(accent)",
@@ -46,14 +47,14 @@
         "find_highlight_foreground": "var(background)",
         "foreground": "var(foreground)",
         "gutter_foreground": "var(comment)",
-        "gutter_foreground_highlight": "color(var(comment) l(75%))",
+        "gutter_foreground_highlight": "var(foreground)",
         "highlight": "var(cyan)",
         "inactive_selection": "var(selection)",
         "invisibles": "color(var(comment) s(30%) l(60%) a(50%))",
         "line_highlight": "var(line-highlight)",
         "misspelling": "var(red)",
         "selection": "var(selection)",
-        "selection_border": "color(var(selection) lightness(35%))",
+        "selection_border": "color(var(selection) l(75%))",
         "shadow": "color(var(shadow) alpha(0.25))",
         "stack_guide": "color(var(stack) a(0.75))",
         "tags_foreground": "var(pink)",
@@ -444,6 +445,82 @@
         {
             "scope": "storage.modifier.clear-scopes.sublime-syntax",
             "foreground": "var(red)"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "background": "color(var(pink) blend(var(lighten) 25%))"
+        },
+        {
+            "name": "Invalid deprecated",
+            "scope": "invalid.deprecated",
+            "background": "color(var(orange) blend(var(lighten) 25%))"
+        },
+        {
+            "scope": "diff.deleted",
+            "background": "color(var(pink) blend(var(lighten) 17%))"
+        },
+        {
+            "scope": "diff.deleted.char",
+            "background": "color(var(pink) blend(var(lighten) 35%))"
+        },
+        {
+            "scope": "diff.inserted",
+            "background": "color(var(green) blend(var(lighten) 17%))"
+        },
+        {
+            "scope": "diff.inserted.char",
+            "background": "color(var(green) blend(var(lighten) 35%))"
+        },
+        {
+            "scope": "diff.inserted.merge-left",
+            "background": "color(var(green) blend(var(lighten) 17%))",
+            "foreground_adjust": "l(+ 5%)"
+        },
+        {
+            "scope": "diff.inserted.char.merge-left",
+            "background": "color(var(green) blend(var(lighten) 35%))",
+            "foreground_adjust": "l(+ 10%)"
+        },
+        {
+            "scope": "diff.border.merge-left",
+            "background": "color(var(green) blend(var(lighten) 50%))"
+        },
+        {
+            "scope": "diff.inserted.merge-right",
+            "background": "color(var(yellow) blend(var(lighten) 17%))",
+            "foreground_adjust": "l(+ 5%)"
+        },
+        {
+            "scope": "diff.inserted.char.merge-right",
+            "background": "color(var(yellow) blend(var(lighten) 35%))",
+            "foreground_adjust": "l(+ 10%)"
+        },
+        {
+            "scope": "diff.border.merge-right",
+            "background": "color(var(green) blend(var(lighten) 50%))"
+        },
+        {
+            "scope": "diff.border.merge-conflict",
+            "background": "color(var(red) blend(var(lighten) 50%))"
+        },
+        {
+            "scope": "diff.border.merge-merged",
+            "background": "color(var(purple) blend(var(lighten) 50%))"
+        },
+        {
+            "scope": "diff.fill",
+            "background": "color(var(background) l(- 5%))"
+        },
+        {
+            "scope": "diff.deleted.side-by-side",
+            "background": "color(var(background) l(- 5%))",
+            "foreground_adjust": "l(- 5%)"
+        },
+        {
+            "scope": "diff.inserted.side-by-side",
+            "background": "color(var(background) l(- 5%))",
+            "foreground_adjust": "l(- 5%)"
         }
     ]
 }

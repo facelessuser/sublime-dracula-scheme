@@ -28,13 +28,13 @@ Sublime Text as Sublime Merge will find the color schemes in Sublime Text.
 For Sublime Text, edit your `Preferences.sublime-settings` file to use the Dracula theme:
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Classic.sublime-color-scheme",
+    "color_scheme": "Dracula Neue Classic.sublime-color-scheme",
 ```
 
 For Sublime Merge, once installed, it is recommended to install the [Sublime Merge theme](https://github.com/facelessuser/merge-dracula-theme)
 and follow related theme instructions.
 
-## Dracula Pro
+## Dracula Neue Pro Variants
 
 **We are not affiliated with Dracula Pro, nor do we condone using the official paid for themes without paying for them,
 but this theme is an original work that uses the Dracula Pro palette, the theme itself is not derived from the source of
@@ -85,63 +85,63 @@ It should be noted that the Alucard Pro theme was recently added and deviates so
 Currently, it uses colors as close as we were able to get using analysis for comments, line highlights, and base
 colors.
 
-### Dracula Pro:
+### Dracula Neue Pro:
 
 ![Pro](screenshots/Text%20-%20Pro.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro.sublime-color-scheme",
+    "color_scheme": "Dracula Neue Pro.sublime-color-scheme",
 ```
 
-### Dracula Pro (Buffy)
+### Dracula Neue Pro (Buffy)
 
 ![Buffy](screenshots/Text%20-%20Buffy.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro (Buffy).sublime-color-scheme",
+    "color_scheme": "Dracula Neue Pro (Buffy).sublime-color-scheme",
 ```
 
-### Dracula Pro (Blade)
+### Dracula Neue Pro (Blade)
 
 ![Blade](screenshots/Text%20-%20Blade.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro (Blade).sublime-color-scheme",
+    "color_scheme": "Dracula Neue Pro (Blade).sublime-color-scheme",
 ```
 
-### Dracula Pro (Lincoln)
+### Dracula Neue Pro (Lincoln)
 
 ![Lincoln](screenshots/Text%20-%20Lincoln.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro (Lincoln).sublime-color-scheme",
+    "color_scheme": "Dracula Neue Pro (Lincoln).sublime-color-scheme",
 ```
 
-### Dracula Pro (Morbius)
+### Dracula Neue Pro (Morbius)
 
 ![Morbius](screenshots/Text%20-%20Morbius.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro (Morbius).sublime-color-scheme",
+    "color_scheme": "Dracula Neue Pro (Morbius).sublime-color-scheme",
 ```
 
-### Dracula Pro (Van Helsing)
+### Dracula Neue Pro (Van Helsing)
 
 ![Van Helsing](screenshots/Text%20-%20Van%20Helsing.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro (Van Helsing).sublime-color-scheme",
+    "color_scheme": "Dracula Neue Pro (Van Helsing).sublime-color-scheme",
 ```
 
-### Dracula Pro (Alucard)
+### Dracula Neue Pro (Alucard)
 
 ![Alucard](screenshots/Text%20-%20Alucard.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro (Alucard).sublime-color-scheme",
+    "color_scheme": "Dracula Neue Pro (Alucard).sublime-color-scheme",
 ```
 
-### Dracula Pro (Nosferatu)
+### Dracula Neue Pro (Nosferatu)
 
 Nosferatu Pro is our take on a Pro theme with the classic Dracula background and comments. It gives a more bluish
 background hue than the purple hue of the normal Pro theme. We feel this combination was a missed opportunity for lovers
@@ -150,7 +150,7 @@ of the original Dracula.
 ![Nosferatu](screenshots/Text%20-%20Nosferatu.png)
 
 ```js
-    "color_scheme": "Packages/Color Scheme - Dracula Neue/Dracula Pro (Nosferatu).sublime-color-scheme",
+    "color_scheme": "Dracula Neue Pro (Nosferatu).sublime-color-scheme",
 ```
 
 ## Modifying Color Schemes

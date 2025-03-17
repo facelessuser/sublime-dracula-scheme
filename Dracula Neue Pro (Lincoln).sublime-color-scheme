@@ -1,5 +1,5 @@
 {
-    "name": "Dracula Pro (Morbius)",
+    "name": "Dracula Neue Pro (Lincoln)",
     "author": "Isaac Muse",
     "comments": "Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using Dracula Pro color palette (Zeno Rocha)",
     "variables": {
@@ -12,11 +12,11 @@
         "blue": "hsl(210, 100%, 75%)",
         "pink": "hsl(330, 100%, 75%)",
         "purple": "hsl(250, 100%, 75%)",
-        "background": "hsl(355, 14%, 15%)",
+        "background": "hsl(49, 14%, 15%)",
         "selection": "color(var(background) s(15%) l(30%))",
         "comment": "color(var(background) s(25%) l(55%))",
         "line-highlight": "color(var(background) s(25%) l(25%))",
-        "accent": "var(red)",
+        "accent": "var(yellow)",
         "caret": "var(foreground)",
         "block-caret": "var(caret)",
         "highlight": "var(yellow)",
