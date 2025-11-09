@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1
+
+-   **NEW**: Tweak the non-standard "blue" color in Alucard color scheme.
+
 ## 2.0
 
 -   **NEW**: Rebrand as Dracula Neue.
